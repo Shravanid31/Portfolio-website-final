@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  nav {
+    background-color: #2a2a2a;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a.active {
+    color: #f0a500;
+    text-decoration: underline;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .contact-section {
+    padding: 4rem 10%;
+  }
+  
+  .contact-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 550px;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+  
+  .contact-details {
+    flex: 1;
+  }
+  
+  .contact-details h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-details hr {
+    width: 60px;
+    border: 1px solid #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-details ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 2.2rem;
+  }
+  
+  .contact-details ul li span {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-image img {
+      width: 100%;
+    }
+  }
+  

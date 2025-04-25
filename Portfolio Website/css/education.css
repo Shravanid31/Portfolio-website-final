@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  nav {
+    background-color: #2a2a2a;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a.active {
+    color: #f0a500;
+    text-decoration: underline;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .education-section {
+    padding: 4rem 10%;
+    text-align: center;
+  }
+  
+  .education-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+  
+  .edu-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .edu-card {
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .edu-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .edu-card p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.4;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .edu-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .edu-card {
+      max-width: 80%;
+    }
+  }
+  
